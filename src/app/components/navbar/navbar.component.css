@@ -1,0 +1,18 @@
+.bg-nav{
+    background-color: #3b83bd ;
+}
+.imgLogo {
+width: 60px;
+height: auto;
+}
+.form-rounded {
+    border-radius: 1rem;
+    }
+
+    .nav-centro{
+        margin-right: 180px;
+        margin-left: 230px;
+    }
+    .nav-derecha{
+right: 0;
+    }

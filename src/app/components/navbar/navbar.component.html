@@ -1,27 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-nav">
-  <a class="navbar-brand" href="#">
-    <img src="assets/jm.png" class="imgLogo" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <button class="" type="button" >    <span class="navbar-toggler-icon"></span>  </button>
-    <form class="form-inline nav-centro">
-      <input class="form-control " type="search" size="60" placeholder="Búsqueda por productos">
-      <button class=" btn btn-secondary" type="submit"><i class="fa fa-search"></i></button>
-
-    </form>
-
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa fa-user"></i>Entra o regístrate </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i>Mi carrito</a>
-      </li>
-    </ul>
-
+<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-nav ">
+  <div class="col-3">
+    <a class="navbar-brand" href="#">
+      <img src="assets/jm.png" class="imgLogo" alt="">
+    </a>
+    <button class="button brk-btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+      <span class="navbar-toggler-icon "></span>
+    </button>
   </div>
+<div class="col-6">
+  <form class="form-inline ">
+    <input class="form-control texto"  type="search" size="60" placeholder="Búsqueda por productos">
+    <button class=" btn btn-secondary texto" type="submit"><i class="fa fa-search"></i></button>
+  <button class=" btn btn-primary ver" visibility="hidden" type="submit"><i class="fa fa-search"></i></button>
+
+  </form>
+</div>
+    
+<div class="col-3 ">
+  <ul class="navbar-nav ">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-user"></i><span class="texto">Entra o regístrate</span> </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i><span class="texto">Mi carrito</span></a>
+    </li>
+  </ul>
+</div>
+
+
 </nav>

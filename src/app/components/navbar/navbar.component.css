@@ -1,5 +1,6 @@
 .bg-nav{
     background-color: #3b83bd ;
+    color: yellow ;
 }
 .imgLogo {
 width: 60px;
@@ -16,3 +17,60 @@ height: auto;
     .nav-derecha{
 right: 0;
     }
+    .brk-btn {
+        position: relative;
+        background: none;
+        color: yellow;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 0.2em solid yellow;
+        padding: 0.5em 1em;
+      }
+      .brk-btn::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10%;
+        background: #222;
+        height: 0.3em;
+        right: 20%;
+        top: -0.21em;
+        transform: skewX(-45deg);
+        -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      .brk-btn::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10%;
+        background: #222;
+        height: 0.3em;
+        left: 20%;
+        bottom: -0.25em;
+        transform: skewX(45deg);
+        -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+        transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      .brk-btn:hover::before {
+        right: 80%;
+      }
+      .brk-btn:hover::after {
+        left: 80%;
+      }
+      
+  
+      body, html{ margin:0; padding:0;}
+      .header{ border-top:1px solid white;background:white; color:#333; height:150px; width:100%; font-family: 'Lobster', cursive; text-align:center}
+      .menu{ height:80px; width:100%; background:#333; color:white; text-align:center}
+      .wrapper{ height:2000px; width:100%; padding-top:20px}
+       
+      .fixed{position:fixed; top:0}
+      @media screen and(max-width:600){
+.texto{
+  visibility:hidden;
+}
+.ver{
+visibility: visible;
+}
+      }
